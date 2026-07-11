@@ -1,0 +1,13 @@
+streamlit
+langchain
+langchain-groq
+langchain-community
+langchain-text-splitters
+langgraph
+langchain-core
+sentence-transformers
+qdrant-client
+rank-bm25
+gitpython
+tavily-python
+python-dotenv
