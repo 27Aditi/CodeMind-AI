@@ -3,6 +3,7 @@ import shutil
 from git import Repo, GitCommandError
 from config import REPO_CLONE_DIR, SUPPORTED_EXTENSIONS, IGNORED_DIRS
 import subprocess
+import time, sys
 
 
 import stat
@@ -50,41 +51,29 @@ class repo_loader:
         self.clone_dir = clone_dir
 
     def _clone_or_pull(self):
-        if os.path.exists(self.clone_dir):
-            import time
+        def _clone_or_pull(self):
+    if os.path.exists(self.clone_dir):
+        if sys.platform == "win32":
             abs_path = os.path.abspath(self.clone_dir)
-    
-    # First make everything writable
             for root, dirs, files in os.walk(abs_path):
                 for f in files:
                     try:
                         os.chmod(os.path.join(root, f), 0o777)
                     except:
                         pass
-    
-    # Use Windows rd command
-            subprocess.run(
-                ['cmd', '/c', 'rd', '/s', '/q', abs_path],
-                capture_output=True
-            )
-            time.sleep(2)
-    
-    # If still exists, try once more
-            if os.path.exists(abs_path):
-                time.sleep(2)
-                subprocess.run(
-                    ['cmd', '/c', 'rd', '/s', '/q', abs_path],
-                    capture_output=True
-                )
-                time.sleep(1)
+            shutil.rmtree(abs_path, onexc=force_remove)
+        else:
+            shutil.rmtree(self.clone_dir)
+        time.sleep(1)
 
-        try:
-            print(f"Cloning {self.repo_url} ...")  # debug
-            Repo.clone_from(self.repo_url, self.clone_dir)
-            print("Clone successful!")  # debug
-        except GitCommandError as e:
-            print(f"Clone failed: {e}")  # debug
-            raise ValueError(f"Failed to clone: {e}")
+    try:
+        print(f"Cloning {self.repo_url} ...")
+        Repo.clone_from(self.repo_url, self.clone_dir)
+        print("Clone successful!")
+    except GitCommandError as e:
+        print(f"Clone failed: {e}")
+        raise ValueError(f"Failed to clone: {e}")
+
 
     def _read_files(self):
         documents = []
