@@ -2,11 +2,11 @@
 
 > Chat with any GitHub repository using AI — understand any codebase instantly.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-codemind--ai.streamlit.app-FF4B4B?style=for-the-badge&logo=streamlit)](https://codemind-ai.streamlit.app/)
-![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![LangGraph](https://img.shields.io/badge/LangGraph-Agent-green?style=for-the-badge)
-![Groq](https://img.shields.io/badge/Groq-Llama%203.3%2070B-orange?style=for-the-badge)
-![Qdrant](https://img.shields.io/badge/Qdrant-Vector%20DB-purple?style=for-the-badge)
+[[Live Demo](https://img.shields.io/badge/Live%20Demo-codemind--ai.streamlit.app-FF4B4B?style=for-the-badge&logo=streamlit)](https://codemind-ai.streamlit.app/)
+[Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+[LangGraph](https://img.shields.io/badge/LangGraph-Agent-green?style=for-the-badge)
+[Groq](https://img.shields.io/badge/Groq-Llama%203.3%2070B-orange?style=for-the-badge)
+[Qdrant](https://img.shields.io/badge/Qdrant-Vector%20DB-purple?style=for-the-badge)
 
 ---
 
