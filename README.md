@@ -1,4 +1,4 @@
-# CodeMind AI 🧠
+# CodeMind AI 
 
 > Chat with any GitHub repository using AI — understand any codebase instantly.
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 
 **[https://codemind-ai.streamlit.app/](https://codemind-ai.streamlit.app/)**
 
@@ -18,7 +18,7 @@ Paste any public GitHub repository URL and start chatting with its codebase inst
 
 ---
 
-## 💡 What is CodeMind AI?
+## What is CodeMind AI?
 
 CodeMind AI is an AI-powered tool that lets you have a conversation with any GitHub repository. Instead of manually reading through hundreds of files, just ask questions in plain English and get accurate answers with exact file citations.
 
@@ -26,18 +26,18 @@ Whether you're onboarding to a new codebase, doing a code review, or trying to u
 
 ---
 
-## ✨ Features
+## Features
 
-- 🔍 **Hybrid Search** — Combines semantic vector search with BM25 keyword search using Reciprocal Rank Fusion (RRF) for maximum retrieval accuracy
-- 🧠 **Self-RAG Agent** — Automatically grades retrieved chunks for relevance, rewrites queries when needed, and retries until it gets good results
-- 🌐 **Web Search Fallback** — Falls back to Tavily web search when the codebase doesn't contain the answer
-- 📄 **File Citations** — Every answer includes exact file paths and source code chunks so you can verify
-- ⚡ **Blazing Fast** — Powered by Groq's ultra-fast inference engine running Llama 3.3 70B
-- 🎨 **Beautiful UI** — Clean, modern chat interface built with Streamlit
+- **Hybrid Search** — Combines semantic vector search with BM25 keyword search using Reciprocal Rank Fusion (RRF) for maximum retrieval accuracy
+- **Self-RAG Agent** — Automatically grades retrieved chunks for relevance, rewrites queries when needed, and retries until it gets good results
+- **Web Search Fallback** — Falls back to Tavily web search when the codebase doesn't contain the answer
+- **File Citations** — Every answer includes exact file paths and source code chunks so you can verify
+- **Blazing Fast** — Powered by Groq's ultra-fast inference engine running Llama 3.3 70B
+- **Beautiful UI** — Clean, modern chat interface built with Streamlit
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -52,7 +52,7 @@ Whether you're onboarding to a new codebase, doing a code review, or trying to u
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 codemind-ai/
@@ -76,7 +76,7 @@ codemind-ai/
 
 ---
 
-## ⚙️ Local Setup
+## Local Setup
 
 ### 1. Clone the repo
 
@@ -126,7 +126,7 @@ Open **http://localhost:8501** in your browser.
 
 ---
 
-## 🔧 Configuration
+## Configuration
 
 All settings are in `config.py`:
 
@@ -141,18 +141,18 @@ All settings are in `config.py`:
 
 ---
 
-## 📦 Supported File Types
+## Supported File Types
 
 Python, JavaScript, TypeScript, JSX, TSX, Java, C, C++, Go, Rust, Ruby, PHP, C#, Swift, Kotlin, Markdown, JSON, YAML, HTML, CSS, Shell, Jupyter Notebooks
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Pull requests are welcome! Feel free to open an issue for bugs or feature requests.
 
 ---
 
-## 📄 License
+## License
 
 MIT License — feel free to use this project for anything.
